@@ -21,35 +21,24 @@ class Product():
     def __str__(self):
         return f"Product name is: {self.name} , Product Price is:{self.price},product code is:{self.code}"
 
-# def categories_ascending(categories):
-#     return sorted(categories,key=lambda x: x.code)
-#     # print(categories)
-# categories_ascending()
 
-#     n = len(categories)
-#     for i in range(n):
-#         for j in range(0, n-i-1):
-#             if categories[j].code > categories[j+1].code:
-#                 categories[j], categories[j+1] = categories[j+1], categories[j]
-
-
-def products_ascending(products_list):
-    # n = len(products)
-    # for i in range(n):
-    #     for j in range(0, n-i-1):
-    #          if products[j].price > products[j+1].price:
-    #             products[j], products[j+1] = products[j+1], products[j]
-    products_list.sort(key=lambda x:x.price)
+def products_ascending(products):
+    n = len(products)
+    for i in range(n):
+        for j in range(0, n-i-1):
+             if products[j].price > products[j+1].price:
+                products[j], products[j+1] = products[j+1], products[j]
+    # products_list.sort(key=lambda x:x.price)
 
 
 
-def products_descending(products_list):
-    # n = len(products)
-    # for i in range(n):
-    #     for j in range(0, n-i-1):
-    #         if products[j].price < products[j+1].price:
-    #             products[j], products[j+1] = products[j+1], products[j]
-    products_list.sort(key=lambda x:x.price,reverse=True)
+def products_descending(products):
+    n = len(products)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if products[j].price < products[j+1].price:
+                products[j], products[j+1] = products[j+1], products[j]
+    # products_list.sort(key=lambda x:x.price,reverse=True)
 
 
 obj1 = Category('abc', 121)
@@ -106,8 +95,7 @@ for product in [product_obj1, product_obj2, product_obj3, product_obj4, product_
         break
 else:
     print("code is not exist")
-    print('test')
-    print('hello')
+
 
 
 # sp =int(input("enter value:"))

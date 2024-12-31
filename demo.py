@@ -107,6 +107,7 @@ for product in [product_obj1, product_obj2, product_obj3, product_obj4, product_
 else:
     print("code is not exist")
     print('test')
+    print('hello')
 
 
 # sp =int(input("enter value:"))

@@ -106,6 +106,8 @@ for product in [product_obj1, product_obj2, product_obj3, product_obj4, product_
         break
 else:
     print("code is not exist")
+    print('test')
+
 
 # sp =int(input("enter value:"))
 # value =[print("code is exist") if product.code == sp else print("code is not exist") for product in [product_obj1, product_obj2, product_obj3, product_obj4, product_obj5, product_obj6, product_obj7, product_obj8, product_obj9, product_obj10]]
